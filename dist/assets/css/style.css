@@ -1408,7 +1408,7 @@ template {
         align-items: center;
     }
 
-    .footer__logo {
+    .footer__wrapper .footer__logo {
         margin-top: 10px;
     }
 
@@ -1909,7 +1909,7 @@ template {
 }
 
 @media screen and (max-width: 360px) {
-    .header__wrapper {
+    .header__top .header__wrapper {
         -ms-flex-direction: column;
         flex-direction: column;
         width: 100%;
