@@ -1,0 +1,79 @@
+.footer {
+    $footer: &;
+    background-color: #f6a83d;
+    
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 75px;
+
+        #{$footer}__logo {
+            margin-top: 85px;
+        }
+    }
+
+    &__payment {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__feedback {
+        width: 495px;
+        height: 175px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__bottom {
+        margin-top: 120px;
+        background-color: #6c2c1c;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        #{$footer}__copyright {
+            margin: 0 auto;
+            color: #af8a82;
+            font-family: MuliRegular;
+            font-size: 1.3rem;
+            padding: 20px 20px;
+        }
+    }
+
+    &__button {
+        margin: 0 160px 0 0;
+        position: absolute;
+        right: 0;
+    }
+
+
+
+    &__btn {
+        position: relative;
+        outline: none;
+        border: 0;
+        background: transparent;
+        font-family: 'Muli-Bold';
+        font-size: 1.6rem;
+        color: #fff;
+
+        &::after {
+            content: '';
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            right: -53px;
+            top: -43px;
+            background-image: url(../images/footer/footer_botton-arrow.png)
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+@import './info';
+@import './payment';
+@import './feedback';

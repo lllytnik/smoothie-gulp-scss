@@ -1,0 +1,41 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+/* ===BASE=== */
+@import './base/normalize.scss';
+@import './base/font';
+@import './base/container';
+/* ===HEADER=== */
+@import './layout/header/header';
+@import './layout/header/nav';
+@import './layout/header/personal';
+@import './components/social';
+/* ===COMPONENTS=== */
+@import './components/botton';
+@import './components/titele';
+@import './components/text';
+/* ===SECTION=== */
+@import './layout/smoothie';
+@import './layout/about';
+@import './layout/products';
+@import './layout/story';
+@import './layout/reviews';
+@import './layout/blog';
+@import './layout/instagram';
+/* ===FOOTER=== */
+@import './layout/footer/footer';
+/* ===MEDIA=== */
+@import './media/max-width:1400px';
+@import './media/max-width:1200px';
+@import './media/max-width:992px';
+@import './media/max-width:768px';
+@import './media/max-width:576px';
+@import './media/max-width:360px';

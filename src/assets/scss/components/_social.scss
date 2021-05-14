@@ -1,0 +1,18 @@
+.social {
+    $social: &;
+    &__list {
+        list-style: none;
+        display: flex;
+
+        #{$social}__item--top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50px;
+            background-color: #fff;
+        }
+    }
+}

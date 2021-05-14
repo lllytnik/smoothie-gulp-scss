@@ -1,0 +1,76 @@
+.products {
+    $products: &;
+
+    &__wrapper {
+        display: flex;
+        overflow-x: scroll;
+        min-width: 100%;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 480px;
+        padding: 130px 0 80px 0;
+
+        #{$products}__subtitle {
+            margin-top: 30px;
+            font-family: 'Muli-Bold';
+            font-size: 2.4rem;
+            color: #fff;
+        }
+
+        #{$products}__item {
+            margin-top: 10px;
+            font-family: 'Muli-Italic';
+            font-size: 2.1rem;
+            color: #fff;
+        }
+
+        #{$products}__btn {
+            width: 190px;
+            height: 60px;
+            position: relative;
+            padding-right: 110px;
+            margin-top: 50px;
+            font-size: 2.1rem;
+            background-color: inherit;
+            border: 2px solid #fff;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                width: 33px;
+                height: 17px;
+                background-image: url(../images/products/icon-arrow_products.png);
+            }
+        }
+    }
+
+    &__column--chocolate {
+        background-color: #662e18;
+
+    }
+
+    &__column--vegan {
+        background-color: #18846d;
+    }
+
+    &__column--lemon {
+        background-color: #f8af3f;
+
+    }
+
+    &__column--turmeric {
+        background-color: #c5461b;
+
+    }
+}

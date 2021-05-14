@@ -1,0 +1,207 @@
+@media screen and (max-width:992px) {
+    .header {
+        $header: &;
+
+        &__wrapper {
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        &__top {
+
+            #{$header}__navigation {
+                display: none;
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding-top: 120px;
+                margin-top: 0px;
+                background-color: #0aa566;
+                z-index: 111;
+            }
+
+            #{$header}__navigation.active {
+                display: flex;
+            }
+        }
+
+        &__nav {
+            margin-top: 100px;
+        }
+
+        &__burger-btn {
+            display: block;
+        }
+
+
+    }
+
+    .nav {
+        $nav: &;
+
+        &__list {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 400px;
+
+            #{$nav}__item {
+                margin: 0;
+            }
+        }
+    }
+
+    .personal {
+        $personal: &;
+
+        &__list {
+            #{$personal}__item {
+                margin-right: 40px;
+            }
+        }
+
+    }
+
+
+    .about {
+        $about: &;
+
+        &__wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 70px 70px;
+
+            #{$about}__wrap-img {
+                transform: none;
+                text-align: center;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+
+                #{$about}__img {
+                    max-width: 80%;
+                }
+            }
+        }
+
+
+    }
+
+    .story {
+        $story: &;
+
+        padding: 60px 0 60px 0;
+
+        .story__container {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__picture::before {
+            top: 480px;
+            left: 280px;
+        }
+    }
+
+
+
+    .reviews {
+        $reviews: &;
+
+        &__inner {
+            margin-top: 50px;
+            flex-direction: column;
+
+            &::after {
+                display: none;
+            }
+
+            #{$reviews}__userpic {
+                margin: 20px 0 0 0px;
+            }
+
+            #{$reviews}__desc::before {
+                display: none;
+            }
+        }
+
+        &__row-btn {
+            margin-top: 50px;
+        }
+    }
+
+
+    .blog {
+        $blog: &;
+
+        padding-bottom: 90px;
+
+        &__wrapper {
+            flex-direction: column;
+
+            #{$blog}__excerpt {
+                align-items: center;
+
+                #{$blog}__subtitle {
+                    margin-left: 0px;
+
+                    &::after {
+                        background-size: 555px 12px;
+                        background-repeat: no-repeat;
+                        top: -29px;
+                        left: 0;
+                    }
+                }
+
+                #{$blog}__meta {
+                    margin-left: 0;
+                }
+
+                #{$blog}__text {
+                    margin: 20px 0 0 40px;
+                }
+            }
+        }
+    }
+
+
+    .footer {
+        $footer: &;
+
+        &__wrapper {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        &__logo {
+            margin-top: 10px;
+        }
+
+        &__info {
+            margin-top: 30px;
+        }
+
+        &__payment {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        &__feedback {
+            margin-top: 30px;
+        }
+    }
+
+    .feedback {
+        $feedback: &;
+
+        &__title {
+            text-align: center;
+        }
+    }
+}

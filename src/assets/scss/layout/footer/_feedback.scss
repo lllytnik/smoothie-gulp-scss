@@ -1,0 +1,72 @@
+.feedback {
+    $feedback: &;
+
+    &__title {
+        font-size: 2.6rem;
+        color: #fff;
+    }
+
+    &__form {
+        font-family: 'Muli-Bold';
+        font-size: 1.7rem;
+        color: #6d450c;
+        position: relative;
+    }
+
+    &__newsletter {
+        margin-top: 30px;
+        padding: 18px 0px 20px 55px;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        -ms-border-radius: 35px;
+        -o-border-radius: 35px;
+        border-radius: 35px;
+        background-image: url(../images/footer/footer-icon-mail.png);
+        background-repeat: no-repeat;
+        background-position: 20px center;
+    }
+
+    &__social {
+        display: flex;
+        position: relative;
+        margin: 30px 0 0 190px;
+
+        &::after {
+            content: '';
+            width: 48px;
+            height: 43px;
+            position: absolute;
+            top: -15px;
+            left: -62px;
+            background-image: url(../images/footer/footer_icon_arrow.png)
+        }
+
+
+    }
+
+    &__btn {
+        margin: 4px 40px 0 0;
+        outline: none;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        font-family: 'MuliExtraBold', sans-serif;
+        font-size: 1.8rem;
+        color: #6d450c;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        width: 35px;
+        height: 35px;
+    }
+
+}

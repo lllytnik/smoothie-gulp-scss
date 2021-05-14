@@ -1,0 +1,102 @@
+.header {
+    $header: &;
+
+    background: url(../images/header/header-bg-img.png) no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+        display: flex;
+        position: relative;
+        padding-top: 87px;
+        max-width: 1728px;
+        width: 100%;
+        margin: 0 auto;
+
+        #{$header}__navigation {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            z-index: 111;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%, -29%);
+        -moz-transform: translate(-50%, -29%);
+        -ms-transform: translate(-50%, -29%);
+        -o-transform: translate(-50%, -29%);
+        transform: translate(-50%, -29%);
+    }
+
+    &__burger-btn {
+        position: fixed;
+        display: none;
+        top: 40px;
+        right: 40px;
+        border: 0;
+        background: transparent;
+        z-index: 111;
+        cursor: pointer;
+
+        #{$header}__burger-img {
+            width: 50px;
+            border: 2px solid #f8b231;
+
+        }
+    }
+
+    &__btn {
+        height: 70px;
+        width: 280px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 125px;
+        padding-right: 124px;
+        background-color: #0aa566;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 27px;
+            right: 35px;
+            width: 33px;
+            height: 17px;
+            background-image: url(../images/header/icon-arrow_btn.png);
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__personal {
+        margin-right: 90px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 47px;
+            height: 2px;
+            right: -45px;
+            top: 10px;
+            background-image: url(../images/header/icon-line_header.png);
+
+        }
+    }
+}
+

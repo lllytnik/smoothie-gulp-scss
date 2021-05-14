@@ -1,0 +1,35 @@
+.personal {
+    $personal: &;
+
+    &__list {
+        list-style: none;
+        display: flex;
+
+        #{$personal}__item {
+            margin-right: 45px;
+            position: relative;
+        }
+
+        #{$personal}__link-quantity {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: -10px;
+            right: -15px;
+            width: 18px;
+            text-decoration: none;
+            background-color: white;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+
+            #{$personal}__basket-quantity {
+                font-family: Muli;
+                font-size: 1.6rem;
+                color: black
+            }
+        }
+    }
+}

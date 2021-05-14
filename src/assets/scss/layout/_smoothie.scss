@@ -1,0 +1,51 @@
+.smoothie {
+    $smoothie: &;
+    padding: 90px 0 95px 0;
+
+    &__title {
+        margin-bottom: 35px;
+        text-align: center;
+        color: #f7ae3b;
+        font-size: 5rem;
+        letter-spacing: -1px;
+
+    }
+
+    &__text {
+        max-width: 915px;
+        margin: 0 auto;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    &__grid-container {
+        display: grid;
+        max-width: 1010px;
+        margin: 0 auto;
+        margin-top: 65px;
+        gap: 2px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 194px;
+        background-color: #f6edde;
+
+        #{$smoothie}__grid-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+
+            #{$smoothie}__img {
+                margin: auto;
+            }
+
+            #{$smoothie}__subtitle {
+                color: #f2612d;
+                font-family: 'MuliExtraBold', sans-serif;
+                font-size: 25px;
+                margin-bottom: 34px;
+            }
+
+        }
+    }
+}

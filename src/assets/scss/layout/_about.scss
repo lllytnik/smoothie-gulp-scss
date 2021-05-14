@@ -1,0 +1,92 @@
+.about {
+    $about: &;
+
+    background-color: #15846d;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__wrap-img {
+        -webkit-transform: translate(-101px, 65px);
+        -moz-transform: translate(-101px, 65px);
+        -ms-transform: translate(-101px, 65px);
+        -o-transform: translate(-101px, 65px);
+        transform: translate(-101px, 65px);
+    }
+
+    &__structure {
+        margin-top: 85px;
+        margin-left: 38px;
+        max-width: 611px;
+
+        #{$about}__title {
+            font-size: 5.5rem;
+            color: #fff;
+            letter-spacing: -1px;
+        }
+
+        #{$about}__title--green {
+            position: relative;
+            font-size: 5.5rem;
+            color: #cae941;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 60px;
+                right: -15px;
+                width: 458px;
+                height: 15px;
+                background-image: url(../images/about/icon-line_about.png);
+            }
+        }
+
+    }
+
+    &__list {
+        margin-top: 44px;
+    }
+
+    &__item {
+        padding-left: 30px;
+        margin: 7px 0 0 8px;
+        list-style: none;
+        line-height: 1.8;
+        font-size: 2.1rem;
+        letter-spacing: 1px;
+        background: url(../images/about/icon-marker.png) no-repeat 3px 9px;
+        color: #fff;
+
+        #{$about}__item--special {
+            font-weight: bold;
+            font-size: 2.1rem;
+        }
+    }
+
+    &__btn {
+        width: 380px;
+        height: 60px;
+        position: relative;
+        margin-top: 44px;
+        text-align: start;
+        font-size: 2.1rem;
+        border: 2px solid #f8b231;
+        background-color: #15846d;
+        color: #fff;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            width: 33px;
+            height: 17px;
+            background-image: url(../images/about/icon-arrow_btn.png);
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
