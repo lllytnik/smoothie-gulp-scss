@@ -37,18 +37,10 @@
     .blog {
         $blog: &;
 
-        &__wrapper {
-
-            #{$blog}__excerpt {
-
-                #{$blog}__subtitle {
-
-                    &::after {
-                        width: 325px;
-                        left: -85px;
-                        background-size: 625px 12px;
-                        background-repeat: no-repeat;
-                    }
+        &__excerpt {
+            #{$blog}__subtitle {
+                &::after {
+                    display: none;
                 }
             }
         }

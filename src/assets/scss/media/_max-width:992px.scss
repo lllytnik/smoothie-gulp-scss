@@ -89,8 +89,6 @@
                 }
             }
         }
-
-
     }
 
     .story {
@@ -126,8 +124,10 @@
                 margin: 20px 0 0 0px;
             }
 
-            #{$reviews}__desc::before {
-                display: none;
+            #{$reviews}__desc{
+                &::before {
+                    display: none;
+                }
             }
         }
 
@@ -144,28 +144,25 @@
 
         &__wrapper {
             flex-direction: column;
+        }
+        &__excerpt {
+            align-items: center;
+            margin: 98px 0 0 0px;
 
-            #{$blog}__excerpt {
-                align-items: center;
+            #{$blog}__subtitle {
+                margin-left: 0px;
 
-                #{$blog}__subtitle {
-                    margin-left: 0px;
-
-                    &::after {
-                        background-size: 555px 12px;
-                        background-repeat: no-repeat;
-                        top: -29px;
-                        left: 0;
-                    }
+                &::after {
+                    display: none;
                 }
+            }
 
-                #{$blog}__meta {
-                    margin-left: 0;
-                }
+            #{$blog}__meta {
+                margin-left: 0;
+            }
 
-                #{$blog}__text {
-                    margin: 20px 0 0 40px;
-                }
+            #{$blog}__text {
+                margin: 20px 0 0 40px;
             }
         }
     }
