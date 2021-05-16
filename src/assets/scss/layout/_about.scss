@@ -1,7 +1,11 @@
 .about {
     $about: &;
+    $bg-color: #15846d;
+    $txt-color: white;
+    $title-color-sp: #cae941;
+    $border-color: #f8b231;
 
-    background-color: #15846d;
+    background-color: $bg-color;
 
     &__wrapper {
         display: flex;
@@ -22,14 +26,14 @@
 
         #{$about}__title {
             font-size: 5.5rem;
-            color: #fff;
+            color:$txt-color;
             letter-spacing: -1px;
         }
 
         #{$about}__title--green {
             position: relative;
             font-size: 5.5rem;
-            color: #cae941;
+            color: $title-color-sp;
 
             &::after {
                 content: '';
@@ -56,7 +60,7 @@
         font-size: 2.1rem;
         letter-spacing: 1px;
         background: url(../images/about/icon-marker.png) no-repeat 3px 9px;
-        color: #fff;
+        color: $txt-color;
 
         #{$about}__item--special {
             font-weight: bold;
@@ -71,9 +75,9 @@
         margin-top: 44px;
         text-align: start;
         font-size: 2.1rem;
-        border: 2px solid #f8b231;
-        background-color: #15846d;
-        color: #fff;
+        border: 2px solid  $border-color;
+        background-color: $bg-color;
+        color:$txt-color;
 
         &::after {
             content: '';

@@ -1,7 +1,12 @@
 .blog {
     $blog: &;
-    padding: 90px 0 190px 0;
+    $txt-color: #3e3e3e;
+    $link-color: #1e1e1e;
+    $meta-color: #1e1e1e;
+    $title-color: #f7ae3b;
+    $subtitle-color: #f2612d;
 
+    padding: 90px 0 190px 0;
 
     &__wrapper {
         display: flex;
@@ -10,7 +15,7 @@
 
         #{$blog}__title {
             font-size: 5rem;
-            color: #f7ae3b;
+            color: $title-color;
         }
 
         #{$blog}__img {
@@ -29,7 +34,7 @@
         #{$blog}__subtitle {
             font-family: 'MuliExtraBold', sans-serif;
             font-size: 2.9rem;
-            color: #f2612d;
+            color: $subtitle-color;
             margin: 50px 0 0 0px;
             position: relative;
 
@@ -50,20 +55,20 @@
             margin-top: 20px;
             font-size: 1.6rem;
             font-family: 'MuliRegular';
-            color: #1e1e1e;
+            color: $meta-color;
         }
 
         #{$blog}__text {
             margin: 20px 0 0 58px;
             font-size: 1.8rem;
-            color: #3e3e3e;
+            color: $txt-color;
 
             #{$blog}__link {
                 position: relative;
                 text-decoration: none;
                 font-size: 1.8rem;
                 font-family: 'Muli-Bold';
-                color: #1e1e1e;
+                color: $link-color;
 
                 &::after {
                     content: '';
