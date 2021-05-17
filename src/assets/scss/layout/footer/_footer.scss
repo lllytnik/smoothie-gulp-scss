@@ -1,6 +1,11 @@
 .footer {
     $footer: &;
-    background-color: #f6a83d;
+    $bg-color: #f6a83d;
+    $bg-color-botton: #6c2c1c;
+    $color-copy: #af8a82;
+    $color-btn: white;
+
+    background-color: $bg-color;
     
 
     &__wrapper {
@@ -27,14 +32,14 @@
 
     &__bottom {
         margin-top: 120px;
-        background-color: #6c2c1c;
+        background-color: $bg-color-botton;
         display: flex;
         align-items: center;
         position: relative;
 
         #{$footer}__copyright {
             margin: 0 auto;
-            color: #af8a82;
+            color: $color-copy;
             font-family: MuliRegular;
             font-size: 1.3rem;
             padding: 20px 20px;
@@ -56,7 +61,7 @@
         background: transparent;
         font-family: 'Muli-Bold';
         font-size: 1.6rem;
-        color: #fff;
+        color: $color-btn;
 
         &::after {
             content: '';
@@ -73,7 +78,3 @@
         }
     }
 }
-
-@import './info';
-@import './payment';
-@import './feedback';

@@ -1,9 +1,11 @@
 .info {
     $info: &;
+    $color-title: white;
+    $color-link: #6d450c;
 
     &__title {
         font-size: 2.6rem;
-        color: #fff;
+        color: $color-title;
 
     }
 
@@ -15,7 +17,7 @@
 
         #{$info}__link {
             text-decoration: none;
-            color: #6d450c;
+            color: $color-link;
             font-size: 1.8rem;
         }
     }

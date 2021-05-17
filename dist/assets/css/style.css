@@ -386,7 +386,7 @@ template {
     height: 100vh;
     background-position: center;
     background-size: cover;
-    color: #fff;
+    color: white;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -497,9 +497,9 @@ template {
 .nav__list .nav__item .nav__link {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: 'MuliExtraBold', sans-serif;
-    color: #fff;
+    color: white;
 }
 
 .personal__list {

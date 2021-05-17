@@ -1,9 +1,10 @@
 .payment {
     $payment: &;
+    $color-title: white;
 
     &__title {
         font-size: 2.6rem;
-        color: #fff;
+        color: $color-title;
     }
 
     &__wrapper {

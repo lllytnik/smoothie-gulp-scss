@@ -1,5 +1,7 @@
 .personal {
     $personal: &;
+    $color-link: black;
+    $bg-color: white;
 
     &__list {
         list-style: none;
@@ -18,7 +20,7 @@
             right: -15px;
             width: 18px;
             text-decoration: none;
-            background-color: white;
+            background-color: $bg-color;
             border-radius: 50%;
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
@@ -28,7 +30,7 @@
             #{$personal}__basket-quantity {
                 font-family: Muli;
                 font-size: 1.6rem;
-                color: black
+                color:  $color-link;
             }
         }
     }

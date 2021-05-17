@@ -1,15 +1,18 @@
 .feedback {
     $feedback: &;
+    $title-color: white;
+    $form-color: #6d450c;
+    $btn-color: #6d450c;
 
     &__title {
         font-size: 2.6rem;
-        color: #fff;
+        color: $title-color;
     }
 
     &__form {
         font-family: 'Muli-Bold';
         font-size: 1.7rem;
-        color: #6d450c;
+        color: $form-color;
         position: relative;
     }
 
@@ -52,7 +55,7 @@
         cursor: pointer;
         font-family: 'MuliExtraBold', sans-serif;
         font-size: 1.8rem;
-        color: #6d450c;
+        color: $btn-color;
     }
 
     &__list {
