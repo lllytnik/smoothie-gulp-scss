@@ -1,5 +1,4 @@
 /* ===VARS=== */
-/* ===ABOUT=== */
 /* ===BASE=== */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Castom
@@ -622,7 +621,7 @@ template {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #fff;
+    background-color: white;
 }
 
 .smoothie__grid-container .smoothie__grid-item .smoothie__img {
@@ -748,14 +747,14 @@ template {
     margin-top: 30px;
     font-family: 'Muli-Bold';
     font-size: 2.4rem;
-    color: #fff;
+    color: white;
 }
 
 .products__column .products__item {
     margin-top: 10px;
     font-family: 'Muli-Italic';
     font-size: 2.1rem;
-    color: #fff;
+    color: white;
 }
 
 .products__column .products__btn {
@@ -766,7 +765,7 @@ template {
     margin-top: 50px;
     font-size: 2.1rem;
     background-color: inherit;
-    border: 2px solid #fff;
+    border: 2px solid white;
 }
 
 .products__column .products__btn:hover {
@@ -841,7 +840,7 @@ template {
     height: 70px;
     position: relative;
     padding-right: 149px;
-    color: #fff;
+    color: white;
     background-color: #0aa566;
 }
 
@@ -945,7 +944,7 @@ template {
 }
 
 .reviews__desc .reviews__text {
-    color: #fff;
+    color: white;
     font-family: 'MuliRegular';
     font-size: 1.8rem;
     width: 457px;
@@ -953,7 +952,7 @@ template {
 }
 
 .reviews__desc .reviews__copy {
-    color: #b3742d;
+    color: white;
     font-size: 1.8rem;
     margin-top: 10px;
 }
@@ -1067,6 +1066,11 @@ template {
     padding: 0 0 10px 0;
 }
 
+.instagram .instagram__container .instagram__wrap-img::before, .instagram__container .instagram .instagram__wrap-img::before {
+    background: linear-gradient(140deg, transparent, transparent 80%, #1d1e1f);
+    opacity: 0.25;
+}
+
 .instagram__wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -1127,8 +1131,6 @@ template {
     height: 388px;
     top: 0;
     left: 0;
-    background: linear-gradient(140deg, transparent, transparent 80%, #1d1e1f);
-    opacity: 0.25;
 }
 
 /* ===FOOTER=== */

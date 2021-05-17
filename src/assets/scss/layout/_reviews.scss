@@ -1,7 +1,13 @@
 .reviews {
     $reviews: &;
+    $bg-color: #68311b;
+    $title-color:#b3742d;
+    $title-color-sp:#f2612d;
+    $txt-color: white;
+    $copy-color: white;
 
-    background-color: #68311b;
+
+    background-color: $bg-color;
     padding: 115px 0 75px 0;
 
     &__wrapper {
@@ -11,11 +17,11 @@
 
         #{$reviews}__title {
             font-size: 5rem;
-            color: #b3742d;
+            color: $title-color;
 
             #{$reviews}__titel--special {
                 font-size: 5rem;
-                color: #f2612d;
+                color: $title-color-sp;
                 text-transform: uppercase;
             }
         }
@@ -64,7 +70,7 @@
         }
 
         #{$reviews}__text {
-            color: #fff;
+            color: $txt-color;
             font-family: 'MuliRegular';
             font-size: 1.8rem;
             width: 457px;
@@ -72,7 +78,7 @@
         }
 
         #{$reviews}__copy {
-            color: #b3742d;
+            color: $copy-color;
             font-size: 1.8rem;
             margin-top: 10px;
         }

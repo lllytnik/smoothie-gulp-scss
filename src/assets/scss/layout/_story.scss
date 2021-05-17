@@ -1,5 +1,9 @@
 .story {
     $story: &;
+    $title-color:#f7ae3b;
+    $txt-color: #1e1e1e;
+    $btn-color: white;
+    $btn-bg-color: #0aa566;
 
     padding: 120px 0 120px 0;
 
@@ -19,13 +23,13 @@
 
         #{$story}__title {
             font-size: 5rem;
-            color: #f7ae3b;
+            color: $title-color;
             margin: 0;
         }
 
         #{$story}__text {
             font-size: 1.8rem;
-            color: #1e1e1e;
+            color: $txt-color;
             margin: 40px 0 85px 0;
         }
 
@@ -34,8 +38,8 @@
             height: 70px;
             position: relative;
             padding-right: 149px;
-            color: #fff;
-            background-color: #0aa566;
+            color: $btn-color;
+            background-color: $btn-bg-color;
 
             &:hover {
                 cursor: pointer;
