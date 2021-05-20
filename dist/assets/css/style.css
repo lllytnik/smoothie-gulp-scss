@@ -557,6 +557,18 @@ template {
     background-color: #fff;
 }
 
+.social__list .social__item--top:hover {
+    background-color: aqua;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+
+.social__item--top:hover {
+    background-color: aqua;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+
 /* ===COMPONENTS=== */
 .btn {
     padding: 0 34px;
@@ -569,6 +581,10 @@ template {
     -moz-border-radius: 35px;
     -ms-border-radius: 35px;
     -o-border-radius: 35px;
+}
+
+.btn:hover {
+    color: blue;
 }
 
 .title {
@@ -1197,7 +1213,7 @@ template {
     background: transparent;
     font-family: 'Muli-Bold';
     font-size: 1.6rem;
-    color: #fff;
+    color: white;
 }
 
 .footer__btn::after {
@@ -1216,7 +1232,7 @@ template {
 
 .info__title {
     font-size: 2.6rem;
-    color: #fff;
+    color: white;
 }
 
 .info__list {
@@ -1233,7 +1249,7 @@ template {
 
 .payment__title {
     font-size: 2.6rem;
-    color: #fff;
+    color: white;
 }
 
 .payment__wrapper {
@@ -1254,7 +1270,7 @@ template {
 
 .feedback__title {
     font-size: 2.6rem;
-    color: #fff;
+    color: white;
 }
 
 .feedback__form {

@@ -9,6 +9,14 @@
         #{$nav}__item {
             margin-right: 35px;
 
+            &:hover{
+                transform: scaleY(1.2);
+                -webkit-transform: scaleY(1.2);
+                -moz-transform: scaleY(1.2);
+                -ms-transform: scaleY(1.2);
+                -o-transform: scaleY(1.2);
+}
+
             #{$nav}__link {
                 text-decoration: none;
                 text-transform: uppercase;

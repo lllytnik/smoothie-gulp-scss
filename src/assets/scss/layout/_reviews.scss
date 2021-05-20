@@ -1,8 +1,8 @@
 .reviews {
     $reviews: &;
     $bg-color: #68311b;
-    $title-color:#b3742d;
-    $title-color-sp:#f2612d;
+    $title-color: #b3742d;
+    $title-color-sp: #f2612d;
     $txt-color: white;
     $copy-color: white;
 
@@ -93,14 +93,38 @@
             outline: none;
             border: 0;
             background: transparent;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s;
 
             &:hover {
                 cursor: pointer;
             }
         }
+    }
 
-        #{$reviews}__btn--left {
-            margin-right: 72px;
+    #{$reviews}__btn--left {
+        margin-right: 72px;
+
+        &:hover {
+            -o-transform: translateX(-10px);
+            -ms-transform: translateX(-10px);
+            -moz-transform: translateX(-10px);
+            -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+        }
+    }
+
+    #{$reviews}__btn--right {
+
+        &:hover {
+            -o-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            -moz-transform: translateX(10px);
+            -webkit-transform: translateX(10px);
+            transform: translateX(10px);
         }
     }
 }

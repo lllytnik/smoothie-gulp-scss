@@ -2,6 +2,7 @@
 
     .header {
         $header: &;
+        $bg-color: #0aa566;
 
         &__wrapper {
             justify-content: center;
@@ -21,7 +22,7 @@
                 bottom: 0;
                 padding-top: 120px;
                 margin-top: 0px;
-                background-color: #0aa566;
+                background-color: $bg-color;
                 z-index: 111;
             }
 

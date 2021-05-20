@@ -74,16 +74,20 @@
         &::after {
             content: '';
             position: absolute;
-            top: 27px;
-            right: 35px;
+            top: 29px;
+            right: 30px;
             width: 33px;
             height: 17px;
             background-image: url(../images/header/icon-arrow_btn.png);
+            transition: 0.2s;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -o-transition: 0.2s;
         }
 
-        &:hover {
-            cursor: pointer;
-        }
+
+
     }
 
     &__personal {
@@ -102,4 +106,3 @@
         }
     }
 }
-

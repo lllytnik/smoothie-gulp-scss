@@ -7,6 +7,7 @@
 
     .header {
         $header: &;
+        $bg-color: #0aa566;
 
         &__top {
 
@@ -20,7 +21,7 @@
                 right: 0;
                 bottom: 0;
                 padding-top: 120px;
-                background-color: #0aa566;
+                background-color: $bg-color;
                 z-index: 111;
                 margin-top: 0;
             }
