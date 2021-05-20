@@ -458,15 +458,16 @@ template {
 .header__btn::after {
     content: '';
     position: absolute;
-    top: 27px;
-    right: 35px;
+    top: 29px;
+    right: 30px;
     width: 33px;
     height: 17px;
     background-image: url(../images/header/icon-arrow_btn.png);
-}
-
-.header__btn:hover {
-    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 
 .header__personal {
@@ -492,6 +493,14 @@ template {
 
 .nav__list .nav__item {
     margin-right: 35px;
+}
+
+.nav__list .nav__item:hover {
+    transform: scaleY(1.2);
+    -webkit-transform: scaleY(1.2);
+    -moz-transform: scaleY(1.2);
+    -ms-transform: scaleY(1.2);
+    -o-transform: scaleY(1.2);
 }
 
 .nav__list .nav__item .nav__link {
@@ -555,16 +564,10 @@ template {
     height: 35px;
     border-radius: 50px;
     background-color: #fff;
+    transition: 0.2s;
 }
 
 .social__list .social__item--top:hover {
-    background-color: aqua;
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-}
-
-.social__item--top:hover {
-    background-color: aqua;
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
 }
@@ -584,7 +587,12 @@ template {
 }
 
 .btn:hover {
-    color: blue;
+    cursor: pointer;
+}
+
+.btn:hover::after {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
 }
 
 .title {
@@ -983,14 +991,25 @@ template {
     outline: none;
     border: 0;
     background: transparent;
+    transition: 0.2s;
 }
 
 .reviews__row-btn .reviews__btn:hover {
     cursor: pointer;
 }
 
-.reviews__row-btn .reviews__btn--left {
+.reviews .reviews__btn--left {
     margin-right: 72px;
+}
+
+.reviews .reviews__btn--left:hover {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+
+.reviews .reviews__btn--right:hover {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
 }
 
 .blog {
@@ -1076,6 +1095,12 @@ template {
     width: 18px;
     height: 10px;
     background-image: url(../images/blog/icon-arrow_blog.png);
+    transition: 0.2s;
+}
+
+.blog__excerpt .blog__text .blog__link:hover:after {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
 }
 
 .instagram {
@@ -1224,10 +1249,13 @@ template {
     right: -53px;
     top: -43px;
     background-image: url(../images/footer/footer_botton-arrow.png);
+    transition: 0.2s;
 }
 
-.footer__btn:hover {
+.footer__btn:hover::after {
     cursor: pointer;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
 .info__title {
@@ -1239,6 +1267,11 @@ template {
     font-family: 'Muli-Bold';
     line-height: 1.8;
     list-style: none;
+}
+
+.info__list .info__item:hover {
+    -webkit-transform: scaleY(1.2);
+    transform: scaleY(1.2);
 }
 
 .info__list .info__link {
@@ -1333,6 +1366,12 @@ template {
     margin-right: 10px;
     width: 35px;
     height: 35px;
+    transition: 0.2s;
+}
+
+.feedback__item:hover {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
 }
 
 /* ===MEDIA=== */
