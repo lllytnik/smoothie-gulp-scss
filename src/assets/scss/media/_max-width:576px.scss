@@ -96,7 +96,7 @@
         $story: &;
 
         &__wrapper {
-            max-width: 475px;
+            max-width: 420px;
             align-items: center;
 
             #{$story}__text {
@@ -117,6 +117,15 @@
         }
 
     }
+    .reviews{
+        $reviews: &;
+
+        &__desc{
+            #{$reviews}__text{
+                max-width: 420px;
+            }
+        }
+    }
 
     .blog {
         $blog: &;
@@ -124,7 +133,7 @@
         &__wrapper {
             #{$blog}__excerpt {
                 margin: 0px 0 0 0px;
-                max-width: 510px;
+                max-width: 420px;
 
                 #{$blog}__subtitle {
                     &::after {
@@ -152,6 +161,10 @@
         &__button {
             margin: -44px 63px 0 0;
         }
+
+        &__wrapper {
+            flex-direction: column;
+        }
     }
 
     .feedback {
@@ -161,7 +174,11 @@
         }
 
         &__social {
-            margin: 30px 0 0 91px;
+            margin: 30px 0 0 35px;
+
+            &::after {
+                display: none;
+            }
         }
     }
 }
