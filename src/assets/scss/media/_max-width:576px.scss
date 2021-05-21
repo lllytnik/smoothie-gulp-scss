@@ -28,10 +28,35 @@
 
         }
 
-        &__wrapper {
-            justify-content: center;
-            margin-top: 100px;
+        &__top {
+            #{$header}__wrapper {
+                flex-direction: column;
+                width: 100%;
+            }
         }
+
+        &__personal {
+            max-width: 156px;
+            width: 100%;
+            margin-right: 0px;
+        }
+
+        &__burger-btn {
+            top: 10px;
+            right: 10px;
+        }
+
+        &__social {
+            margin-top: 50px;
+            width: 126px;
+        }
+
+        &__personal::after {
+            width: 100px;
+            right: 30px;
+            top: 51px;
+        }
+    
 
         &__burger-btn {
             display: block;
@@ -77,8 +102,21 @@
 
     .about {
         $about: &;
-
+        &__wrapper {
+            #{$about}__wrap-img {
+                /* transform: none;
+                text-align: center;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none; */
+                position: relative;
+                top: 30px;
+                left: 60px;
+            }
+        }
         &__structure {
+            margin-left: 0px;
             #{$about}__title--green {
 
                 &::after {
@@ -88,7 +126,7 @@
         }
 
         &__btn {
-            width: 375px;
+            width: 360px;
         }
     }
 
@@ -96,7 +134,7 @@
         $story: &;
 
         &__wrapper {
-            max-width: 420px;
+            max-width: 360px;
             align-items: center;
 
             #{$story}__text {

@@ -971,7 +971,7 @@ template {
     color: white;
     font-family: 'MuliRegular';
     font-size: 1.8rem;
-    width: 457px;
+    max-width: 457px;
     line-height: 1.8;
 }
 
@@ -1898,7 +1898,7 @@ template {
     }
 
     .story__wrapper {
-        max-width: 475px;
+        max-width: 420px;
         -ms-flex-align: center;
         align-items: center;
     }
@@ -1919,9 +1919,13 @@ template {
         max-width: 100%;
     }
 
+    .reviews__desc .reviews__text {
+        max-width: 420px;
+    }
+
     .blog__wrapper .blog__excerpt {
         margin: 0px 0 0 0px;
-        max-width: 510px;
+        max-width: 420px;
     }
 
     .blog__wrapper .blog__excerpt .blog__subtitle::after {
@@ -1945,12 +1949,21 @@ template {
         margin: -44px 63px 0 0;
     }
 
+    .footer__wrapper {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
     .feedback__form {
         font-size: 12px;
     }
 
     .feedback__social {
-        margin: 30px 0 0 91px;
+        margin: 30px 0 0 35px;
+    }
+
+    .feedback__social::after {
+        display: none;
     }
 }
 

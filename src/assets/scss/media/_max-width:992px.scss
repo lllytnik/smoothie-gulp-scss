@@ -78,12 +78,15 @@
             padding: 70px 70px;
 
             #{$about}__wrap-img {
-                transform: none;
+                /* transform: none;
                 text-align: center;
                 -webkit-transform: none;
                 -moz-transform: none;
                 -ms-transform: none;
-                -o-transform: none;
+                -o-transform: none; */
+                position: relative;
+                top: 30px;
+                left: 60px;
 
                 #{$about}__img {
                     max-width: 80%;
@@ -125,7 +128,7 @@
                 margin: 20px 0 0 0px;
             }
 
-            #{$reviews}__desc{
+            #{$reviews}__desc {
                 &::before {
                     display: none;
                 }
@@ -146,6 +149,7 @@
         &__wrapper {
             flex-direction: column;
         }
+
         &__excerpt {
             align-items: center;
             margin: 98px 0 0 0px;

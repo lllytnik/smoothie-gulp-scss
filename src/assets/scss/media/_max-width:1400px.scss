@@ -21,11 +21,14 @@
 
         &__wrapper {
             #{$about}__wrap-img {
-                transform: translate(70px, 80px);
-                -webkit-transform: translate(70px, 80px);
-                -moz-transform: translate(70px, 80px);
-                -ms-transform: translate(70px, 80px);
-                -o-transform: translate(70px, 80px);
+                /*  -webkit-transform: translate(-101px, 65px);
+            -moz-transform: translate(-101px, 65px);
+            -ms-transform: translate(-101px, 65px);
+            -o-transform: translate(-101px, 65px);
+            transform: translate(-101px, 65px); */
+                position: relative;
+                top: 100px;
+                left: 60px;
 
                 #{$about}__img {
                     max-width: 80%;

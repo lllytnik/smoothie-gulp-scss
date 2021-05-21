@@ -61,6 +61,26 @@
     }
 
     .about {
+        $about: &;
+
+        &__wrapper {
+            #{$about}__wrap-img {
+                /* transform: none;
+                text-align: center;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none; */
+                position: relative;
+                top: 30px;
+                left: 30px;
+            }
+        }
+
+        &__structure {
+            margin-left: 0px;
+        }
+
         &__btn {
             width: 275px;
             font-size: 20px;
@@ -108,7 +128,8 @@
             flex-direction: column;
             align-items: center;
         }
-        &__newsletter{
+
+        &__newsletter {
             width: 300px;
         }
     }

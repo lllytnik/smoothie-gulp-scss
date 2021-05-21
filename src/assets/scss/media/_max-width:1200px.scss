@@ -28,11 +28,14 @@
             padding: 70px 70px;
 
             #{$about}__wrap-img {
-                transform: translate(99px, -74px);
+                /* transform: translate(99px, -74px);
                 -webkit-transform: translate(99px, -74px);
                 -moz-transform: translate(99px, -74px);
                 -ms-transform: translate(99px, -74px);
-                -o-transform: translate(99px, -74px);
+                -o-transform: translate(99px, -74px); */
+                position: relative;
+                top: 100px;
+                left: 60px;
 
                 #{$about}__img {
                     max-width: 80%;
