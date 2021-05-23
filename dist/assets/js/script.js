@@ -6,8 +6,6 @@
         navigation.classList.toggle('active');
     });
 }());
-
-
 var VanillaTilt = (function () {
     'use strict';
 
@@ -516,5 +514,4 @@ var VanillaTilt = (function () {
     return VanillaTilt;
 
 }());
-
 //# sourceMappingURL=script.js.map

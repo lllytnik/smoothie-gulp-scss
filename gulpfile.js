@@ -1,22 +1,22 @@
 "use strict";
 
 // Подключаем модули
-const { src, dest } = require('gulp');
-const gulp = require('gulp');
-const sourcemaps = require('gulp-sourcemaps'); // благодаря ему в браузере видим не минифицированный код, а привычную разметку
-const autoprefixer = require('gulp-autoprefixer'); // расставляет префиксы для поддержки свойств в разных браузерах
-const cssbeautify = require('gulp-cssbeautify'); // форматирует css, чтобы он был легким для чтения
-const removeComments = require('gulp-strip-css-comments'); // удаляет комментарии
-const rename = require('gulp-rename'); // для переименования файлов
-const sass = require('gulp-sass'); // для компиляции sass в css
-const cssnano = require('gulp-cssnano'); //для минификации css
-const uglify = require('gulp-uglify'); // для минификации (сжатия) js-кода. Обратного преобразования нет.
-const concat = require('gulp-concat'); //"склеивает" несколько файлов в один
-const plumber = require('gulp-plumber'); // для обработки ошибок
-const imagemin = require('gulp-imagemin'); //для минификации изображений
-const del = require('del'); // для удаления файлов и папок
-const notify = require('gulp-notify'); //предоставляет информацию об ошибке
-const browserSync = require('browser-sync').create(); // для запуска сервера и перезагрузки страницы при внесении изменений
+const { src, dest } =   require('gulp');
+const gulp =            require('gulp');
+const sourcemaps =      require('gulp-sourcemaps'); // благодаря ему в браузере видим не минифицированный код, а привычную разметку
+const autoprefixer =    require('gulp-autoprefixer'); // расставляет префиксы для поддержки свойств в разных браузерах
+const cssbeautify =     require('gulp-cssbeautify'); // форматирует css, чтобы он был легким для чтения
+const removeComments =  require('gulp-strip-css-comments'); // удаляет комментарии
+const rename =          require('gulp-rename'); // для переименования файлов
+const sass =            require('gulp-sass'); // для компиляции sass в css
+const cssnano =         require('gulp-cssnano'); //для минификации css
+const uglify =          require('gulp-uglify'); // для минификации (сжатия) js-кода. Обратного преобразования нет.
+const concat =          require('gulp-concat'); //"склеивает" несколько файлов в один
+const plumber =         require('gulp-plumber'); // для обработки ошибок
+const imagemin =        require('gulp-imagemin'); //для минификации изображений
+const del =             require('del'); // для удаления файлов и папок
+const notify =          require('gulp-notify'); //предоставляет информацию об ошибке
+const browserSync =     require('browser-sync').create(); // для запуска сервера и перезагрузки страницы при внесении изменений
 
 
 // Пути 
@@ -53,7 +53,8 @@ const path = {
 
 // Если нужно выполнять преобразование файлов в определенном порядке, то используем массив с нужным нам порядком:
 const jsFiles = [
-    srcPath + 'assets/js/main.js'
+    srcPath + 'assets/js/burger-menu.js',
+    srcPath + 'assets/js/tilt.js'
 ]
 
 
@@ -190,9 +191,7 @@ function jsWatch(cb) {
             }
         }))
         .pipe(concat('script.js'))
-        // .pipe(uglify({ //расскомментируй, если надо будет минифицировать js
-        //     toplevel: true //(опция модуля uglify) - как сильно сжимать. Есть три уговня, это самый сильный.
-        // }))
+
         .pipe(sourcemaps.write('.'))
         .pipe(dest(path.build.js))
         .pipe(browserSync.reload({ stream: true }));
@@ -203,6 +202,7 @@ function jsWatch(cb) {
 // Images 
 function images(cb) {
     return src(path.src.images)
+
         .pipe(imagemin([
             imagemin.gifsicle({ interlaced: true }),
             imagemin.mozjpeg({ quality: 95, progressive: true }),
